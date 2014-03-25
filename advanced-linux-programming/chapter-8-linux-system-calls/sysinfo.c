@@ -1,5 +1,3 @@
-#include <linux/kernel.h>
-#include <linux/sys.h>
 #include <stdio.h>
 #include <sys/sysinfo.h>
 
