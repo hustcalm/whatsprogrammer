@@ -1,0 +1,45 @@
+function [midpoint inliers inlierRate] = triangulationFast(R2, t2, xyz, errTol)
+
+
+    %x = R (X - t)
+    %X = inv(R) x + t
+
+    
+    % invR1 = inv(R1);    LookAt1 = invR1 * [0 0 1]';
+    % invR2 = inv(R2);    LookAt2 = invR2 * [0 0 1]';
+
+    
+    LookAt2 = R2 \ [0 0 1]';
+    
+    
+    
+    for k=1:size(xyz{1},1)
+
+        midpoint(k,:) = triangulation2viewMidpoint([0 0 0], xyz{1}(k,:), t2, (R2 \ xyz{2}(k,:)')');
+       
+        proj1 = midpoint(k,:);   proj1 = proj1 / proj1(3);
+        e1(k) = (xyz{1}(k,1) - proj1(1))^2 + ( xyz{1}(k,2) - proj1(2))^2; 
+        if e1(k)  < errTol
+            proj2 = R2 *(midpoint(k,:)' - t2');   proj2 = proj2 / proj2(3);
+            e2(k) = (xyz{2}(k,1) - proj2(1))^2 + ( xyz{2}(k,2) - proj2(2))^2; 
+            if e2(k)  < errTol
+                if midpoint(k,3)<=0
+                    valid(k) = false;
+                else
+                    dotp = (midpoint(k,:) - t2) * LookAt2;
+                    if dotp<=0
+                        valid(k) = false;
+                    else
+                        valid(k) = true;
+                    end
+                end
+            
+            end
+        
+        end
+        
+    end
+
+    inliers = valid;
+    inlierRate = sum(inliers); %/ length(inliers);
+    %inlierError = mean((e1+e2) .* inliers);

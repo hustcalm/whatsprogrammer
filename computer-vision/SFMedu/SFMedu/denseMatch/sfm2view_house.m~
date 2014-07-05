@@ -1,0 +1,115 @@
+close all
+
+
+fname{1} = 'house_L.png';
+fname{2} = 'house_R.png';
+
+image{1} = imread(fname{1});
+image{2} = imread(fname{2});
+
+%{
+figure(1)
+imshow(image{1});
+for k=1:18
+    [x y] = ginput(1);
+    hold on;
+    plot(x,y,'+r');
+    initial_match(k,2) = x;
+    initial_match(k,1) = y;
+end
+
+
+figure(2)
+imshow(image{2});
+for k=1:18
+    [x y] = ginput(1);
+    hold on;
+    plot(x,y,'+r');
+    initial_match(k,4) = x;
+    initial_match(k,3) = y;
+end
+save('inital_match.mat','inital_match');
+%}
+load('initial_match.mat');
+
+
+focalLength(1) = 600;
+focalLength(2) = 600;
+
+
+
+lineIdx = [1 2; 1 3; 3 5; 5 7; 7 9; 9 4; 5 6; 6 8; 8 10; 10 11; 7 8; 9 10; 4 11; 11 12; 12 13; 13 14; 14 15; 15 16; 4 16; 16 2; 2 17; 17 18; 13 18; 15 17];
+
+figure(1)
+imshow(image{1});
+for k=1:size(lineIdx,1)
+    hold on
+    plot([initial_match(lineIdx(k,1),2) initial_match(lineIdx(k,2),2)], [initial_match(lineIdx(k,1),1) initial_match(lineIdx(k,2),1)],'-r');
+end
+
+figure(2)
+imshow(image{2});
+for k=1:size(lineIdx,1)
+    hold on
+    plot([initial_match(lineIdx(k,1),4) initial_match(lineIdx(k,2),4)], [initial_match(lineIdx(k,1),3) initial_match(lineIdx(k,2),3)],'-r');
+end
+
+
+
+xyz{1} = pixel2sphere(initial_match(:,2), initial_match(:,1), size(image{1},2), size(image{1},1), focalLength(1));
+xyz{2} = pixel2sphere(initial_match(:,4), initial_match(:,3), size(image{2},2), size(image{2},1), focalLength(2));
+
+
+figure(3)
+for k=1:size(lineIdx,1)
+    hold on
+    plot([xyz{1}(lineIdx(k,1),1) xyz{1}(lineIdx(k,2),1)], [xyz{1}(lineIdx(k,1),3) xyz{1}(lineIdx(k,2),3)],'-r');
+end
+
+
+
+fprintf('%d\n',size(initial_match,1));
+for k=1:size(initial_match,1)
+    fprintf('%f %f %f\n',xyz{1}(k,1),xyz{1}(k,2),xyz{1}(k,3));
+    fprintf('%f %f %f\n',xyz{2}(k,1),xyz{2}(k,2),xyz{2}(k,3));
+end
+
+
+
+
+% run twoviews c program
+%{
+Best solution : 179 outliers.
+ROTATION = 
+0.99104   -0.11772   -0.0630943
+0.118944   0.992772   0.0160003
+0.0607548   -0.0233616   0.997879
+TRANSLATION = -0.921766 0.321433-0.216861
+Average uncertainty: 2.51061 degrees. 
+This many blocks: 1331471
+%}
+
+R = [0.99104     -0.11772    -0.0630943
+     0.118944     0.992772    0.0160003
+     0.0607548   -0.0233616   0.997879];    
+t = [-0.921766    0.321433   -0.216861];
+
+%xi =R(Xi?t)
+% Xi = inv(R) xi+t
+%R = inv(R);
+%t = -t;
+
+invR = inv(R);
+for k=1:size(initial_match,1)
+    midpoint(k,:) = triangulation2viewMidpoint([0 0 0],xyz{1}(k,:),t, (invR * xyz{2}(k,:)')');
+    
+    
+end
+
+clf
+plot(midpoint(:,1),midpoint(:,3),'.')
+hold on
+axis equal
+plot(0,0,'*g');
+plot(t(1),t(3),'*g');
+

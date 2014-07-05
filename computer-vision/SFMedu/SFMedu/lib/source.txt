@@ -1,0 +1,7 @@
+ceres     			http://code.google.com/p/ceres-solver/
+daesik    			http://www.daesik80.com/matlabfns/matlabfns.htm
+MatlabFns 			http://www.csse.uwa.edu.au/~pk/research/matlabfns/
+vgg       			http://www.robots.ox.ac.uk/~vgg/hzbook/code/
+vlfeat    			http://www.vlfeat.org/
+priority_queue_1.0  http://www.mathworks.com/matlabcentral/fileexchange/24238-priority-queue-mexc++
+

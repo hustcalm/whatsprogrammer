@@ -1,0 +1,44 @@
+function X = reconstructCuboid(x,idx)
+
+%{
+
+This function implement the direct method of the following paper:
+
+Direct Calibration by Fitting of Cuboids to a Single Image Using Differential Evolution
+Luis Gerardo de la Fraga and Oliver Schütze
+
+
+input
+x is 7*2 vector of image cooridnates of the 7 corners (7 must be >= 6)
+idx is a logical binary vector of length 7 to indicate which vector to be
+use in the computation of estimation X
+
+output 
+X3x4 ~ K[R|t]L subjective to||X|| = 1
+
+%}
+C = [ ...
++1 +1 +1; ...
++1 -1 +1; ...
+-1 -1 +1; ...
+-1 +1 +1; ...
++1 +1 -1; ...
++1 -1 -1; ...
+-1 -1 -1];
+A = zeros(14,14);
+A(1:7,1:3) = C;
+A(8:14,5:7) = C;
+A(1:7,9:11) = C;
+A(8:14,9:11) = C;
+A(1:7,4)=ones(7,1);
+A(8:14,8)=ones(7,1);
+A(:,14)=ones(14,1);
+
+
+x=x(:);
+
+A(1:7,9:12) = A(1:7,9:12).* repmat(x(1:7),1,4);
+A(8:14,9:12) = A(1:7,9:12).* repmat(x(8:14),1,4);
+
+
+

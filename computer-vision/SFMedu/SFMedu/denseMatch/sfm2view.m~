@@ -1,0 +1,257 @@
+close all
+clear;
+
+NbPointImageMax = 800;
+HalfSizeWindow  = 5;
+HalfSizePropagate = 2;
+
+% fname{1} = 'DSCF0546_L.png';
+% fname{2} = 'DSCF0546_R.png';
+
+fname{1} = 'templeSR0001.png';
+fname{2} = 'templeSR0002.png';
+
+% fname{1} = 'google_streetview/000049.jpg';
+% fname{2} = 'google_streetview/000050.jpg';
+
+
+visualization = true;
+rectified = false;
+
+% Corner Detection and Descriptor Computation
+for i=1:2
+    image{i} = imread(fname{i});
+    image{i} = double(image{i})/256;
+    
+    %image{i} = imresize(image{i},1/16);
+    
+    if size(image{i},3)==3
+        image{i} = ( 76 * image{i}(:,:,1) + 150 * image{i}(:,:,2) + 30 * image{i}(:,:,3) ) / 256;
+    end
+    
+    matchable_image{i} = ReliableArea(image{i});
+    zncc{i} = ZNCCpatch_all(image{i},HalfSizePropagate);
+    
+    if visualization
+        figure
+        imshow((image{i} + matchable_image{i}) * 0.5);
+    end
+
+    % harris corner detection
+    point{i} = harris(image{i});
+    % get most reliable ones 
+    point{i} = point{i}(1:NbPointImageMax,:);
+    % compute patches
+    descriptor{i} = ZNCCpatch(image{i}, point{i}, HalfSizeWindow);
+    % ZNCCSpeedUp(SInt16(View0_[i].x()), SInt16(View0_[i].y()), SizeWindow, 0, ZNCCTable0+i*Surface)
+    if visualization
+        figure
+        imshow(image{i});
+        hold on;
+        for k=1:size(point{i},1)
+            plot(point{i}(k,2),point{i}(k,1),'y+');
+        end
+        hold off;
+    end
+end
+
+i=1;
+j=2;
+    
+    % =========================== View12 $s %s ===========================
+    
+    % sparse matching
+    point_pair = point_match(size(image{i}),point{i},descriptor{i},size(image{j}),point{j},descriptor{j});
+    
+    if visualization
+        figure
+        imshow( [image{i} image{j}] );
+        hold on
+        for k=1:size(point_pair,1)
+            plot( [point{i}(point_pair(k,1),2),size(image{i},2)+  point{j}(point_pair(k,2),2)],...
+                  [point{i}(point_pair(k,1),1),                   point{j}(point_pair(k,2),1)],'y+');
+        end
+        hold off
+    end
+    
+    % cross checking and WinnerTakeAll
+    for k=1:size(point_pair,1)-1
+        if point_pair(k,3) > 0
+            p_i = point_pair(k,1);
+            idxs = find(point_pair(k+1:end,1)==p_i);
+            idxs = k+idxs;
+            point_pair(idxs,3) = 0;
+            
+            p_j = point_pair(k,2);
+            idxs = find(point_pair(k+1:end,2)==p_j);
+            idxs = k+idxs;
+            point_pair(idxs,3) = 0;
+        end
+    end
+    idxs = find(point_pair(:,3)>0);
+    point_pair = point_pair(idxs,:);
+
+
+    initial_match = [point{i}(point_pair(:,1),:) point{j}(point_pair(:,2),:) point_pair(:,3)];
+    
+    if rectified
+        for k=1:size(initial_match,1)
+            if abs(initial_match(k,1) - initial_match(k,3)) > 20
+                initial_match(k,5) = - 1;
+            end
+        end
+        initial_match = initial_match(find(initial_match(:,5)>=0),:);
+    end
+    
+    if visualization
+        figure
+        imshow( [image{i} image{j}] );
+        hold on
+        for k=1:size(initial_match,1)
+            plot( [initial_match(k,2), size(image{i},2)+initial_match(k,4)],...
+                  [initial_match(k,1),                  initial_match(k,3)],'y+');
+        end
+        hold off
+    end
+        
+% vertical coordinate = dim 1
+
+%{
+focal length
+mm = 24	28	35	43.3	50	70	85	105	
+for 36mm x 24mm film
+
+max(size(image{1})) / 36 * [24 28 35 43.3 50 70 85 105];
+
+%}
+
+
+focalLength(1) = 1525;
+focalLength(2) = 1525;
+% need to search focal length by all images
+
+xyz{1} = pixel2normalize(initial_match(:,2), initial_match(:,1), size(image{1},2), size(image{1},1), focalLength(1));
+xyz{2} = pixel2normalize(initial_match(:,4), initial_match(:,3), size(image{2},2), size(image{2},1), focalLength(2));
+
+%{
+fprintf('%d\n',size(initial_match,1));
+for k=1:size(initial_match,1)
+    fprintf('%f %f %f\n',xyz{1}(k,1),xyz{1}(k,2),xyz{1}(k,3));
+    fprintf('%f %f %f\n',xyz{2}(k,1),xyz{2}(k,2),xyz{2}(k,3));
+end
+%}
+
+
+% use RANSAC to estimate the geometry
+errTol = 1 / focalLength(1); % 2 pixel
+
+% search based method: superisingly good!
+% 6 degree of freedom: assume two cameras are at 1 unit away, three
+% orientation angles
+
+
+fovW = atan(size(image{1},2) /2 / focalLength(1)) * 2 / pi * 180;
+fovH = atan(size(image{1},1) /2 / focalLength(1)) * 2 / pi * 180;
+
+% - assume at least half of the image overlape
+% + assume the image orientation is corrected
+
+delta = 10 /180*pi;
+
+t1 = [0,0,0];
+inlierRate_best = 0;
+
+
+%{
+t2 = [1,0,0];
+RANGyaw1 = -pi:delta:pi-delta;
+RANGyaw2 = -pi:delta:pi-delta;
+RANGpitch = -pi/6:delta:pi/6;
+RANGroll  = -pi/2:delta:pi/2;
+
+steps = 5;
+
+for i=1:2
+    tic
+    for ANGyaw1 = RANGyaw1
+        R1 = eye(3);
+        R1(1,1) = cos(ANGyaw1);    R1(1,3) = -sin(ANGyaw1); 
+        R1(3,1) = sin(ANGyaw1);    R1(3,3) = cos(ANGyaw1);     
+        for ANGyaw2 = RANGyaw2
+            R2 = eye(3);
+            R2(1,1) = cos(ANGyaw2);    R2(1,3) = -sin(ANGyaw2); 
+            R2(3,1) = sin(ANGyaw2);    R2(3,3) = cos(ANGyaw2);     
+
+            [inlierRate inlierError midpoint inliers] = triangulation(R1, R2, t1, t2, xyz, errTol);  
+            if inlierRate_best < inlierRate
+                ANGyaw1_best = ANGyaw1;
+                ANGyaw2_best = ANGyaw2;
+                R1_best = R1;
+                R2_best = R2;
+                inlierRate_best = inlierRate;
+                inlierError_best = inlierError;
+                midpoint_best = midpoint;
+                inliers_best = inliers;
+                fprintf('*');
+            end
+            fprintf('%f\t',inlierRate);
+            
+        end
+        fprintf('\n');
+    end
+    fprintf('best inlier rate = %f \n',inlierRate_best);
+    toc;
+    delta = delta / steps;
+    RANGyaw1 = ANGyaw1_best-delta*(steps-1):delta:ANGyaw1_best+delta*(steps-1);
+    RANGyaw2 = ANGyaw2_best-delta*(steps-1):delta:ANGyaw2_best+delta*(steps-1);
+end
+%}
+
+
+[t_array,~] = icosahedron2sphere(2);
+for it = 1:size(t_array,1)  %162
+    t2 = t_array(it,:);
+    
+    for t = 1:size(t_array,1)  %162
+    t2 = t_array(it,:);
+    
+    R * LookAt = [0 0 1]';
+    
+end
+
+
+
+fprintf('focal length 1 = %f pixel\n',focalLength(1));
+fprintf('focal length 2 = %f pixel\n',focalLength(2));
+fprintf('error tol image1 = %f pixel \n',errTol*focalLength(1));
+fprintf('error tol image2 = %f pixel \n',errTol*focalLength(2));
+fprintf('best inlier rate = %f \n',inlierRate_best);
+fprintf('best reprojection error = %f \n',inlierError_best);
+
+
+LookAt1_best = R1_best \ [0 0 1]';
+LookAt2_best = R2_best \ [0 0 1]';
+
+
+% top view visualization
+figure
+clf
+plot(midpoint_best(:,1),midpoint_best(:,3),'.','MarkerSize',1)
+hold on
+plot(midpoint_best(inliers_best,1),midpoint_best(inliers_best,3),'.r','MarkerSize',2)
+axis equal
+plot(t1(1),t1(3),'*g');     plot([t1(1) t1(1)+LookAt1_best(1)],[t1(3) t1(3)+LookAt1_best(3)] ,'-g');
+plot(t2(1),t2(3),'*g');     plot([t2(1) t2(1)+LookAt2_best(1)],[t2(3) t2(3)+LookAt2_best(3)] ,'-g');
+axis tight
+
+% 3D visualization
+figure
+plot3(midpoint_best(:,1),midpoint_best(:,2),midpoint_best(:,3),'.','MarkerSize',1)
+hold on
+plot3(midpoint_best(inliers_best,1),midpoint_best(inliers_best,2),midpoint_best(inliers_best,3),'.r','MarkerSize',2)
+hold on
+axis equal
+plot3(t1(1),t1(2),t1(3),'*g');     plot3([t1(1) t1(1)+LookAt1_best(1)],[t1(1) t1(2)+LookAt1_best(2)],[t1(3) t1(3)+LookAt1_best(3)] ,'-g');
+plot3(t2(1),t2(2),t2(3),'*g');     plot3([t2(1) t2(1)+LookAt2_best(1)],[t2(2) t2(2)+LookAt2_best(2)],[t2(3) t2(3)+LookAt2_best(3)] ,'-g');
+axis tight
+

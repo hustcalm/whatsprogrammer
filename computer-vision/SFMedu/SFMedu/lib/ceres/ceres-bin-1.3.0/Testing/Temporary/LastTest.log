@@ -1,0 +1,1883 @@
+Start testing: Sep 04 10:37 EDT
+----------------------------------------------------------
+1/45 Testing: array_utils_test
+1/45 Test: array_utils_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/array_utils_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"array_utils_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from ArrayUtils
+[ RUN      ] ArrayUtils.IsArrayValid
+[       OK ] ArrayUtils.IsArrayValid (0 ms)
+[----------] 1 test from ArrayUtils (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"array_utils_test" end time: Sep 04 10:37 EDT
+"array_utils_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/45 Testing: autodiff_test
+2/45 Test: autodiff_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/autodiff_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"autodiff_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 4 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 4 tests from AutoDiff
+[ RUN      ] AutoDiff.ProjectiveCameraModel
+[       OK ] AutoDiff.ProjectiveCameraModel (0 ms)
+[ RUN      ] AutoDiff.Metric
+[       OK ] AutoDiff.Metric (0 ms)
+[ RUN      ] AutoDiff.VaryingNumberOfResidualsForOneCostFunctorType
+[       OK ] AutoDiff.VaryingNumberOfResidualsForOneCostFunctorType (0 ms)
+[ RUN      ] AutoDiff.AlignedAllocationTest
+[       OK ] AutoDiff.AlignedAllocationTest (0 ms)
+[----------] 4 tests from AutoDiff (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"autodiff_test" end time: Sep 04 10:37 EDT
+"autodiff_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/45 Testing: autodiff_cost_function_test
+3/45 Test: autodiff_cost_function_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/autodiff_cost_function_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"autodiff_cost_function_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from AutoDiffResidualAndJacobian
+[ RUN      ] AutoDiffResidualAndJacobian.BilinearDifferentiationTest
+[       OK ] AutoDiffResidualAndJacobian.BilinearDifferentiationTest (0 ms)
+[----------] 1 test from AutoDiffResidualAndJacobian (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"autodiff_cost_function_test" end time: Sep 04 10:37 EDT
+"autodiff_cost_function_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/45 Testing: block_random_access_dense_matrix_test
+4/45 Test: block_random_access_dense_matrix_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/block_random_access_dense_matrix_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"block_random_access_dense_matrix_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from BlockRandomAccessDenseMatrix
+[ RUN      ] BlockRandomAccessDenseMatrix.GetCell
+[       OK ] BlockRandomAccessDenseMatrix.GetCell (0 ms)
+[ RUN      ] BlockRandomAccessDenseMatrix.WriteCell
+[       OK ] BlockRandomAccessDenseMatrix.WriteCell (0 ms)
+[----------] 2 tests from BlockRandomAccessDenseMatrix (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"block_random_access_dense_matrix_test" end time: Sep 04 10:37 EDT
+"block_random_access_dense_matrix_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/45 Testing: block_random_access_sparse_matrix_test
+5/45 Test: block_random_access_sparse_matrix_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/block_random_access_sparse_matrix_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"block_random_access_sparse_matrix_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 2 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from BlockRandomAccessSparseMatrix
+[ RUN      ] BlockRandomAccessSparseMatrix.GetCell
+[       OK ] BlockRandomAccessSparseMatrix.GetCell (0 ms)
+[----------] 1 test from BlockRandomAccessSparseMatrix (0 ms total)
+
+[----------] 1 test from BlockRandomAccessSparseMatrixTest
+[ RUN      ] BlockRandomAccessSparseMatrixTest.IntPairToLongOverflow
+[       OK ] BlockRandomAccessSparseMatrixTest.IntPairToLongOverflow (0 ms)
+[----------] 1 test from BlockRandomAccessSparseMatrixTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 2 test cases ran. (0 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"block_random_access_sparse_matrix_test" end time: Sep 04 10:37 EDT
+"block_random_access_sparse_matrix_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/45 Testing: block_sparse_matrix_test
+6/45 Test: block_sparse_matrix_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/block_sparse_matrix_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"block_sparse_matrix_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 6 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 6 tests from BlockSparseMatrixTest
+[ RUN      ] BlockSparseMatrixTest.SetZeroTest
+[       OK ] BlockSparseMatrixTest.SetZeroTest (0 ms)
+[ RUN      ] BlockSparseMatrixTest.RightMultiplyTest
+[       OK ] BlockSparseMatrixTest.RightMultiplyTest (0 ms)
+[ RUN      ] BlockSparseMatrixTest.LeftMultiplyTest
+[       OK ] BlockSparseMatrixTest.LeftMultiplyTest (0 ms)
+[ RUN      ] BlockSparseMatrixTest.SquaredColumnNormTest
+[       OK ] BlockSparseMatrixTest.SquaredColumnNormTest (0 ms)
+[ RUN      ] BlockSparseMatrixTest.ToDenseMatrixTest
+[       OK ] BlockSparseMatrixTest.ToDenseMatrixTest (0 ms)
+[ RUN      ] BlockSparseMatrixTest.Serialization
+[       OK ] BlockSparseMatrixTest.Serialization (1 ms)
+[----------] 6 tests from BlockSparseMatrixTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 6 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"block_sparse_matrix_test" end time: Sep 04 10:37 EDT
+"block_sparse_matrix_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/45 Testing: canonical_views_clustering_test
+7/45 Test: canonical_views_clustering_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/canonical_views_clustering_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"canonical_views_clustering_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 4 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 4 tests from CanonicalViewsTest
+[ RUN      ] CanonicalViewsTest.ComputeCanonicalViewsTest
+[       OK ] CanonicalViewsTest.ComputeCanonicalViewsTest (0 ms)
+[ RUN      ] CanonicalViewsTest.SizePenaltyTest
+[       OK ] CanonicalViewsTest.SizePenaltyTest (0 ms)
+[ RUN      ] CanonicalViewsTest.ViewScoreTest
+[       OK ] CanonicalViewsTest.ViewScoreTest (0 ms)
+[ RUN      ] CanonicalViewsTest.SimilarityPenaltyTest
+[       OK ] CanonicalViewsTest.SimilarityPenaltyTest (0 ms)
+[----------] 4 tests from CanonicalViewsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"canonical_views_clustering_test" end time: Sep 04 10:37 EDT
+"canonical_views_clustering_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/45 Testing: compressed_row_sparse_matrix_test
+8/45 Test: compressed_row_sparse_matrix_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/compressed_row_sparse_matrix_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"compressed_row_sparse_matrix_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 9 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 9 tests from CompressedRowSparseMatrixTest
+[ RUN      ] CompressedRowSparseMatrixTest.RightMultiply
+[       OK ] CompressedRowSparseMatrixTest.RightMultiply (0 ms)
+[ RUN      ] CompressedRowSparseMatrixTest.LeftMultiply
+[       OK ] CompressedRowSparseMatrixTest.LeftMultiply (0 ms)
+[ RUN      ] CompressedRowSparseMatrixTest.ColumnNorm
+[       OK ] CompressedRowSparseMatrixTest.ColumnNorm (0 ms)
+[ RUN      ] CompressedRowSparseMatrixTest.Scale
+[       OK ] CompressedRowSparseMatrixTest.Scale (0 ms)
+[ RUN      ] CompressedRowSparseMatrixTest.DeleteRows
+[       OK ] CompressedRowSparseMatrixTest.DeleteRows (0 ms)
+[ RUN      ] CompressedRowSparseMatrixTest.AppendRows
+[       OK ] CompressedRowSparseMatrixTest.AppendRows (0 ms)
+[ RUN      ] CompressedRowSparseMatrixTest.Serialization
+[       OK ] CompressedRowSparseMatrixTest.Serialization (0 ms)
+[ RUN      ] CompressedRowSparseMatrixTest.ToDenseMatrix
+[       OK ] CompressedRowSparseMatrixTest.ToDenseMatrix (0 ms)
+[ RUN      ] CompressedRowSparseMatrixTest.ToCRSMatrix
+[       OK ] CompressedRowSparseMatrixTest.ToCRSMatrix (0 ms)
+[----------] 9 tests from CompressedRowSparseMatrixTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 9 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"compressed_row_sparse_matrix_test" end time: Sep 04 10:37 EDT
+"compressed_row_sparse_matrix_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/45 Testing: conditioned_cost_function_test
+9/45 Test: conditioned_cost_function_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/conditioned_cost_function_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"conditioned_cost_function_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from CostFunctionTest
+[ RUN      ] CostFunctionTest.ConditionedCostFunction
+[       OK ] CostFunctionTest.ConditionedCostFunction (0 ms)
+[----------] 1 test from CostFunctionTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"conditioned_cost_function_test" end time: Sep 04 10:37 EDT
+"conditioned_cost_function_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/45 Testing: corrector_test
+10/45 Test: corrector_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/corrector_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"corrector_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 7 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 7 tests from Corrector
+[ RUN      ] Corrector.ZeroGradientDeathTest
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] Corrector.ZeroGradientDeathTest (5 ms)
+[ RUN      ] Corrector.NegativeGradientDeathTest
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] Corrector.NegativeGradientDeathTest (4 ms)
+[ RUN      ] Corrector.ScalarCorrection
+[       OK ] Corrector.ScalarCorrection (0 ms)
+[ RUN      ] Corrector.ScalarCorrectionZeroResidual
+[       OK ] Corrector.ScalarCorrectionZeroResidual (0 ms)
+[ RUN      ] Corrector.ScalarCorrectionAlphaClamped
+[       OK ] Corrector.ScalarCorrectionAlphaClamped (0 ms)
+[ RUN      ] Corrector.MultidimensionalGaussNewtonApproximation
+[       OK ] Corrector.MultidimensionalGaussNewtonApproximation (24 ms)
+[ RUN      ] Corrector.MultidimensionalGaussNewtonApproximationZeroResidual
+[       OK ] Corrector.MultidimensionalGaussNewtonApproximationZeroResidual (18 ms)
+[----------] 7 tests from Corrector (51 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 1 test case ran. (51 ms total)
+[  PASSED  ] 7 tests.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"corrector_test" end time: Sep 04 10:37 EDT
+"corrector_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/45 Testing: dense_sparse_matrix_test
+11/45 Test: dense_sparse_matrix_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/dense_sparse_matrix_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"dense_sparse_matrix_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 7 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 7 tests from DenseSparseMatrixTest
+[ RUN      ] DenseSparseMatrixTest.RightMultiply
+[       OK ] DenseSparseMatrixTest.RightMultiply (0 ms)
+[ RUN      ] DenseSparseMatrixTest.LeftMultiply
+[       OK ] DenseSparseMatrixTest.LeftMultiply (0 ms)
+[ RUN      ] DenseSparseMatrixTest.ColumnNorm
+[       OK ] DenseSparseMatrixTest.ColumnNorm (0 ms)
+[ RUN      ] DenseSparseMatrixTest.Scale
+[       OK ] DenseSparseMatrixTest.Scale (0 ms)
+[ RUN      ] DenseSparseMatrixTest.Serialization
+[       OK ] DenseSparseMatrixTest.Serialization (0 ms)
+[ RUN      ] DenseSparseMatrixTest.ToDenseMatrix
+[       OK ] DenseSparseMatrixTest.ToDenseMatrix (0 ms)
+[ RUN      ] DenseSparseMatrixTest.AppendDiagonal
+[       OK ] DenseSparseMatrixTest.AppendDiagonal (0 ms)
+[----------] 7 tests from DenseSparseMatrixTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 7 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"dense_sparse_matrix_test" end time: Sep 04 10:37 EDT
+"dense_sparse_matrix_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/45 Testing: evaluator_test
+12/45 Test: evaluator_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/evaluator_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"evaluator_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 123 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from Evaluator
+[ RUN      ] Evaluator.EvaluatorRespectsParameterChanges
+[       OK ] Evaluator.EvaluatorRespectsParameterChanges (0 ms)
+[----------] 1 test from Evaluator (0 ms total)
+
+[----------] 3 tests from StaticEvaluateTest
+[ RUN      ] StaticEvaluateTest.MultipleParameterAndResidualBlocks
+[       OK ] StaticEvaluateTest.MultipleParameterAndResidualBlocks (0 ms)
+[ RUN      ] StaticEvaluateTest.ConstantParameterBlock
+[       OK ] StaticEvaluateTest.ConstantParameterBlock (0 ms)
+[ RUN      ] StaticEvaluateTest.LocalParameterization
+[       OK ] StaticEvaluateTest.LocalParameterization (0 ms)
+[----------] 3 tests from StaticEvaluateTest (0 ms total)
+
+[----------] 119 tests from LinearSolvers/EvaluatorTest
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/0
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/0 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/1
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/1 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/2
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/2 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/3
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/3 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/4
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/4 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/5
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/5 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/6
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/6 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/7
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/7 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/8
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/8 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/9
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/9 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/10
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/10 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/11
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/11 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/12
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/12 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/13
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/13 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/14
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/14 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/15
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/15 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/16
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/16 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/0
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/0 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/1
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/1 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/2
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/2 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/3
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/3 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/4
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/4 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/5
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/5 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/6
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/6 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/7
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/7 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/8
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/8 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/9
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/9 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/10
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/10 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/11
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/11 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/12
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/12 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/13
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/13 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/14
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/14 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/15
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/15 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/16
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/16 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/0
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/0 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/1
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/1 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/2
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/2 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/3
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/3 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/4
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/4 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/5
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/5 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/6
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/6 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/7
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/7 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/8
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/8 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/9
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/9 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/10
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/10 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/11
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/11 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/12
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/12 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/13
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/13 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/14
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/14 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/15
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/15 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/16
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/16 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/0
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/0 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/1
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/1 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/2
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/2 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/3
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/3 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/4
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/4 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/5
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/5 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/6
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/6 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/7
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/7 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/8
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/8 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/9
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/9 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/10
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/10 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/11
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/11 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/12
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/12 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/13
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/13 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/14
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/14 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/15
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/15 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/16
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/16 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/0
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/0 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/1
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/1 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/2
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/2 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/3
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/3 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/4
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/4 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/5
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/5 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/6
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/6 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/7
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/7 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/8
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/8 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/9
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/9 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/10
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/10 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/11
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/11 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/12
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/12 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/13
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/13 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/14
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/14 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/15
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/15 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/16
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/16 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/0
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/0 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/1
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/1 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/2
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/2 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/3
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/3 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/4
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/4 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/5
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/5 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/6
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/6 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/7
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/7 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/8
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/8 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/9
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/9 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/10
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/10 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/11
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/11 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/12
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/12 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/13
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/13 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/14
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/14 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/15
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/15 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/16
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/16 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/0
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/0 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/1
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/1 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/2
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/2 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/3
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/3 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/4
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/4 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/5
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/5 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/6
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/6 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/7
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/7 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/8
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/8 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/9
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/9 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/10
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/10 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/11
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/11 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/12
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/12 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/13
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/13 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/14
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/14 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/15
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/15 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/16
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/16 (0 ms)
+[----------] 119 tests from LinearSolvers/EvaluatorTest (6 ms total)
+
+[----------] Global test environment tear-down
+[==========] 123 tests from 3 test cases ran. (6 ms total)
+[  PASSED  ] 123 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"evaluator_test" end time: Sep 04 10:37 EDT
+"evaluator_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/45 Testing: gradient_checking_cost_function_test
+13/45 Test: gradient_checking_cost_function_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/gradient_checking_cost_function_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"gradient_checking_cost_function_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 3 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from GradientCheckingCostFunction
+[ RUN      ] GradientCheckingCostFunction.ResidualsAndJacobiansArePreservedTest
+[       OK ] GradientCheckingCostFunction.ResidualsAndJacobiansArePreservedTest (0 ms)
+[ RUN      ] GradientCheckingCostFunction.SmokeTest
+[       OK ] GradientCheckingCostFunction.SmokeTest (0 ms)
+[----------] 2 tests from GradientCheckingCostFunction (0 ms total)
+
+[----------] 1 test from GradientCheckingProblemImpl
+[ RUN      ] GradientCheckingProblemImpl.ProblemDimensionsMatch
+[       OK ] GradientCheckingProblemImpl.ProblemDimensionsMatch (0 ms)
+[----------] 1 test from GradientCheckingProblemImpl (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 2 test cases ran. (0 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"gradient_checking_cost_function_test" end time: Sep 04 10:37 EDT
+"gradient_checking_cost_function_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/45 Testing: graph_test
+14/45 Test: graph_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/graph_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"graph_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 5 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 5 tests from Graph
+[ RUN      ] Graph.EmptyGraph
+[       OK ] Graph.EmptyGraph (0 ms)
+[ RUN      ] Graph.AddVertexAndEdge
+[       OK ] Graph.AddVertexAndEdge (0 ms)
+[ RUN      ] Graph.AddVertexIdempotence
+[       OK ] Graph.AddVertexIdempotence (0 ms)
+[ RUN      ] Graph.DieOnNonExistentVertex
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] Graph.DieOnNonExistentVertex (9 ms)
+[ RUN      ] Graph.NonExistentEdge
+[       OK ] Graph.NonExistentEdge (0 ms)
+[----------] 5 tests from Graph (9 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test case ran. (9 ms total)
+[  PASSED  ] 5 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"graph_test" end time: Sep 04 10:37 EDT
+"graph_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/45 Testing: graph_algorithms_test
+15/45 Test: graph_algorithms_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/graph_algorithms_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"graph_algorithms_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 5 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from IndependentSetOrdering
+[ RUN      ] IndependentSetOrdering.Chain
+[       OK ] IndependentSetOrdering.Chain (0 ms)
+[ RUN      ] IndependentSetOrdering.Star
+[       OK ] IndependentSetOrdering.Star (0 ms)
+[----------] 2 tests from IndependentSetOrdering (0 ms total)
+
+[----------] 2 tests from Degree2MaximumSpanningForest
+[ RUN      ] Degree2MaximumSpanningForest.PreserveWeights
+[       OK ] Degree2MaximumSpanningForest.PreserveWeights (0 ms)
+[ RUN      ] Degree2MaximumSpanningForest.StarGraph
+[       OK ] Degree2MaximumSpanningForest.StarGraph (0 ms)
+[----------] 2 tests from Degree2MaximumSpanningForest (0 ms total)
+
+[----------] 1 test from VertexDegreeLessThan
+[ RUN      ] VertexDegreeLessThan.TotalOrdering
+[       OK ] VertexDegreeLessThan.TotalOrdering (0 ms)
+[----------] 1 test from VertexDegreeLessThan (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 3 test cases ran. (0 ms total)
+[  PASSED  ] 5 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"graph_algorithms_test" end time: Sep 04 10:37 EDT
+"graph_algorithms_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/45 Testing: implicit_schur_complement_test
+16/45 Test: implicit_schur_complement_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/implicit_schur_complement_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"implicit_schur_complement_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from ImplicitSchurComplementTest
+[ RUN      ] ImplicitSchurComplementTest.SchurMatrixValuesTest
+[       OK ] ImplicitSchurComplementTest.SchurMatrixValuesTest (0 ms)
+[----------] 1 test from ImplicitSchurComplementTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"implicit_schur_complement_test" end time: Sep 04 10:37 EDT
+"implicit_schur_complement_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/45 Testing: iterative_schur_complement_solver_test
+17/45 Test: iterative_schur_complement_solver_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/iterative_schur_complement_solver_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"iterative_schur_complement_solver_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from IterativeSchurComplementSolverTest
+[ RUN      ] IterativeSchurComplementSolverTest.SolverTest
+[       OK ] IterativeSchurComplementSolverTest.SolverTest (0 ms)
+[----------] 1 test from IterativeSchurComplementSolverTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"iterative_schur_complement_solver_test" end time: Sep 04 10:37 EDT
+"iterative_schur_complement_solver_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/45 Testing: jet_test
+18/45 Test: jet_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/jet_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"jet_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 6 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from Jet
+[ RUN      ] Jet.Jet
+[       OK ] Jet.Jet (0 ms)
+[ RUN      ] Jet.JetsInEigenMatrices
+[       OK ] Jet.JetsInEigenMatrices (0 ms)
+[----------] 2 tests from Jet (0 ms total)
+
+[----------] 4 tests from JetTraitsTest
+[ RUN      ] JetTraitsTest.ClassificationMixed
+[       OK ] JetTraitsTest.ClassificationMixed (0 ms)
+[ RUN      ] JetTraitsTest.ClassificationNaN
+[       OK ] JetTraitsTest.ClassificationNaN (0 ms)
+[ RUN      ] JetTraitsTest.ClassificationInf
+[       OK ] JetTraitsTest.ClassificationInf (0 ms)
+[ RUN      ] JetTraitsTest.ClassificationFinite
+[       OK ] JetTraitsTest.ClassificationFinite (0 ms)
+[----------] 4 tests from JetTraitsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 2 test cases ran. (0 ms total)
+[  PASSED  ] 6 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"jet_test" end time: Sep 04 10:37 EDT
+"jet_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/45 Testing: levenberg_marquardt_strategy_test
+19/45 Test: levenberg_marquardt_strategy_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/levenberg_marquardt_strategy_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"levenberg_marquardt_strategy_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from LevenbergMarquardtStrategy
+[ RUN      ] LevenbergMarquardtStrategy.AcceptRejectStepRadiusScaling
+[       OK ] LevenbergMarquardtStrategy.AcceptRejectStepRadiusScaling (0 ms)
+[ RUN      ] LevenbergMarquardtStrategy.CorrectDiagonalToLinearSolver
+[       OK ] LevenbergMarquardtStrategy.CorrectDiagonalToLinearSolver (1 ms)
+[----------] 2 tests from LevenbergMarquardtStrategy (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"levenberg_marquardt_strategy_test" end time: Sep 04 10:37 EDT
+"levenberg_marquardt_strategy_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/45 Testing: dogleg_strategy_test
+20/45 Test: dogleg_strategy_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/dogleg_strategy_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"dogleg_strategy_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 6 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 4 tests from DoglegStrategyFixtureEllipse
+[ RUN      ] DoglegStrategyFixtureEllipse.TrustRegionObeyedTraditional
+[       OK ] DoglegStrategyFixtureEllipse.TrustRegionObeyedTraditional (0 ms)
+[ RUN      ] DoglegStrategyFixtureEllipse.TrustRegionObeyedSubspace
+[       OK ] DoglegStrategyFixtureEllipse.TrustRegionObeyedSubspace (0 ms)
+[ RUN      ] DoglegStrategyFixtureEllipse.CorrectGaussNewtonStep
+[       OK ] DoglegStrategyFixtureEllipse.CorrectGaussNewtonStep (0 ms)
+[ RUN      ] DoglegStrategyFixtureEllipse.ValidSubspaceBasis
+[       OK ] DoglegStrategyFixtureEllipse.ValidSubspaceBasis (0 ms)
+[----------] 4 tests from DoglegStrategyFixtureEllipse (0 ms total)
+
+[----------] 2 tests from DoglegStrategyFixtureValley
+[ RUN      ] DoglegStrategyFixtureValley.CorrectStepLocalOptimumAlongGradient
+[       OK ] DoglegStrategyFixtureValley.CorrectStepLocalOptimumAlongGradient (0 ms)
+[ RUN      ] DoglegStrategyFixtureValley.CorrectStepGlobalOptimumAlongGradient
+[       OK ] DoglegStrategyFixtureValley.CorrectStepGlobalOptimumAlongGradient (1 ms)
+[----------] 2 tests from DoglegStrategyFixtureValley (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 2 test cases ran. (1 ms total)
+[  PASSED  ] 6 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"dogleg_strategy_test" end time: Sep 04 10:37 EDT
+"dogleg_strategy_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/45 Testing: local_parameterization_test
+21/45 Test: local_parameterization_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/local_parameterization_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"local_parameterization_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 6 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from IdentityParameterization
+[ RUN      ] IdentityParameterization.EverythingTest
+[       OK ] IdentityParameterization.EverythingTest (0 ms)
+[----------] 1 test from IdentityParameterization (0 ms total)
+
+[----------] 2 tests from SubsetParameterization
+[ RUN      ] SubsetParameterization.DeathTests
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] SubsetParameterization.DeathTests (16 ms)
+[ RUN      ] SubsetParameterization.NormalFunctionTest
+[       OK ] SubsetParameterization.NormalFunctionTest (0 ms)
+[----------] 2 tests from SubsetParameterization (16 ms total)
+
+[----------] 3 tests from QuaternionParameterization
+[ RUN      ] QuaternionParameterization.ZeroTest
+[       OK ] QuaternionParameterization.ZeroTest (0 ms)
+[ RUN      ] QuaternionParameterization.NearZeroTest
+[       OK ] QuaternionParameterization.NearZeroTest (0 ms)
+[ RUN      ] QuaternionParameterization.AwayFromZeroTest
+[       OK ] QuaternionParameterization.AwayFromZeroTest (0 ms)
+[----------] 3 tests from QuaternionParameterization (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 3 test cases ran. (16 ms total)
+[  PASSED  ] 6 tests.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"local_parameterization_test" end time: Sep 04 10:37 EDT
+"local_parameterization_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/45 Testing: loss_function_test
+22/45 Test: loss_function_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/loss_function_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"loss_function_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 9 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 9 tests from LossFunction
+[ RUN      ] LossFunction.TrivialLoss
+[       OK ] LossFunction.TrivialLoss (0 ms)
+[ RUN      ] LossFunction.HuberLoss
+[       OK ] LossFunction.HuberLoss (0 ms)
+[ RUN      ] LossFunction.SoftLOneLoss
+[       OK ] LossFunction.SoftLOneLoss (0 ms)
+[ RUN      ] LossFunction.CauchyLoss
+[       OK ] LossFunction.CauchyLoss (0 ms)
+[ RUN      ] LossFunction.ArctanLoss
+[       OK ] LossFunction.ArctanLoss (0 ms)
+[ RUN      ] LossFunction.TolerantLoss
+[       OK ] LossFunction.TolerantLoss (0 ms)
+[ RUN      ] LossFunction.ComposedLoss
+[       OK ] LossFunction.ComposedLoss (0 ms)
+[ RUN      ] LossFunction.ScaledLoss
+[       OK ] LossFunction.ScaledLoss (0 ms)
+[ RUN      ] LossFunction.LossFunctionWrapper
+[       OK ] LossFunction.LossFunctionWrapper (0 ms)
+[----------] 9 tests from LossFunction (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 9 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"loss_function_test" end time: Sep 04 10:37 EDT
+"loss_function_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/45 Testing: minimizer_test
+23/45 Test: minimizer_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/minimizer_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"minimizer_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from MinimizerTest
+[ RUN      ] MinimizerTest.InitializationCopiesCallbacks
+[       OK ] MinimizerTest.InitializationCopiesCallbacks (0 ms)
+[----------] 1 test from MinimizerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"minimizer_test" end time: Sep 04 10:37 EDT
+"minimizer_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/45 Testing: normal_prior_test
+24/45 Test: normal_prior_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/normal_prior_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"normal_prior_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from NormalPriorTest
+[ RUN      ] NormalPriorTest.ResidualAtRandomPosition
+[       OK ] NormalPriorTest.ResidualAtRandomPosition (0 ms)
+[ RUN      ] NormalPriorTest.ResidualAtRandomPositionNullJacobians
+[       OK ] NormalPriorTest.ResidualAtRandomPositionNullJacobians (0 ms)
+[----------] 2 tests from NormalPriorTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"normal_prior_test" end time: Sep 04 10:37 EDT
+"normal_prior_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/45 Testing: numeric_diff_cost_function_test
+25/45 Test: numeric_diff_cost_function_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/numeric_diff_cost_function_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"numeric_diff_cost_function_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from NumericDiffCostFunction
+[ RUN      ] NumericDiffCostFunction.EasyCase
+[       OK ] NumericDiffCostFunction.EasyCase (1 ms)
+[ RUN      ] NumericDiffCostFunction.TransendentalOperationsInCostFunction
+[       OK ] NumericDiffCostFunction.TransendentalOperationsInCostFunction (0 ms)
+[ RUN      ] NumericDiffCostFunction.EigenRowMajorColMajorTest
+[       OK ] NumericDiffCostFunction.EigenRowMajorColMajorTest (0 ms)
+[----------] 3 tests from NumericDiffCostFunction (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"numeric_diff_cost_function_test" end time: Sep 04 10:37 EDT
+"numeric_diff_cost_function_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/45 Testing: parameter_block_test
+26/45 Test: parameter_block_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/parameter_block_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"parameter_block_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 4 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 4 tests from ParameterBlock
+[ RUN      ] ParameterBlock.SetLocalParameterization
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] ParameterBlock.SetLocalParameterization (16 ms)
+[ RUN      ] ParameterBlock.SetStateUpdatesLocalParameterizationJacobian
+[       OK ] ParameterBlock.SetStateUpdatesLocalParameterizationJacobian (0 ms)
+[ RUN      ] ParameterBlock.PlusWithNoLocalParameterization
+[       OK ] ParameterBlock.PlusWithNoLocalParameterization (0 ms)
+[ RUN      ] ParameterBlock.DetectBadLocalParameterization
+[       OK ] ParameterBlock.DetectBadLocalParameterization (1 ms)
+[----------] 4 tests from ParameterBlock (17 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test case ran. (17 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"parameter_block_test" end time: Sep 04 10:37 EDT
+"parameter_block_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/45 Testing: partitioned_matrix_view_test
+27/45 Test: partitioned_matrix_view_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/partitioned_matrix_view_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"partitioned_matrix_view_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 6 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 6 tests from PartitionedMatrixViewTest
+[ RUN      ] PartitionedMatrixViewTest.DimensionsTest
+[       OK ] PartitionedMatrixViewTest.DimensionsTest (0 ms)
+[ RUN      ] PartitionedMatrixViewTest.RightMultiplyE
+[       OK ] PartitionedMatrixViewTest.RightMultiplyE (0 ms)
+[ RUN      ] PartitionedMatrixViewTest.RightMultiplyF
+[       OK ] PartitionedMatrixViewTest.RightMultiplyF (0 ms)
+[ RUN      ] PartitionedMatrixViewTest.LeftMultiply
+[       OK ] PartitionedMatrixViewTest.LeftMultiply (0 ms)
+[ RUN      ] PartitionedMatrixViewTest.BlockDiagonalEtE
+[       OK ] PartitionedMatrixViewTest.BlockDiagonalEtE (0 ms)
+[ RUN      ] PartitionedMatrixViewTest.BlockDiagonalFtF
+[       OK ] PartitionedMatrixViewTest.BlockDiagonalFtF (0 ms)
+[----------] 6 tests from PartitionedMatrixViewTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 6 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"partitioned_matrix_view_test" end time: Sep 04 10:37 EDT
+"partitioned_matrix_view_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/45 Testing: polynomial_solver_test
+28/45 Test: polynomial_solver_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/polynomial_solver_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"polynomial_solver_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 16 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 16 tests from PolynomialSolver
+[ RUN      ] PolynomialSolver.InvalidPolynomialOfZeroLengthIsRejected
+[       OK ] PolynomialSolver.InvalidPolynomialOfZeroLengthIsRejected (1 ms)
+[ RUN      ] PolynomialSolver.ConstantPolynomialReturnsNoRoots
+[       OK ] PolynomialSolver.ConstantPolynomialReturnsNoRoots (0 ms)
+[ RUN      ] PolynomialSolver.LinearPolynomialWithPositiveRootWorks
+E0904 10:37:17.893930 11751 polynomial_solver.cc:125] Invalid polynomial of size 0 passed to FindPolynomialRoots
+[       OK ] PolynomialSolver.LinearPolynomialWithPositiveRootWorks (0 ms)
+[ RUN      ] PolynomialSolver.LinearPolynomialWithNegativeRootWorks
+[       OK ] PolynomialSolver.LinearPolynomialWithNegativeRootWorks (0 ms)
+[ RUN      ] PolynomialSolver.QuadraticPolynomialWithPositiveRootsWorks
+[       OK ] PolynomialSolver.QuadraticPolynomialWithPositiveRootsWorks (0 ms)
+[ RUN      ] PolynomialSolver.QuadraticPolynomialWithOneNegativeRootWorks
+[       OK ] PolynomialSolver.QuadraticPolynomialWithOneNegativeRootWorks (0 ms)
+[ RUN      ] PolynomialSolver.QuadraticPolynomialWithTwoNegativeRootsWorks
+[       OK ] PolynomialSolver.QuadraticPolynomialWithTwoNegativeRootsWorks (0 ms)
+[ RUN      ] PolynomialSolver.QuadraticPolynomialWithCloseRootsWorks
+[       OK ] PolynomialSolver.QuadraticPolynomialWithCloseRootsWorks (0 ms)
+[ RUN      ] PolynomialSolver.QuadraticPolynomialWithComplexRootsWorks
+[       OK ] PolynomialSolver.QuadraticPolynomialWithComplexRootsWorks (0 ms)
+[ RUN      ] PolynomialSolver.QuarticPolynomialWorks
+[       OK ] PolynomialSolver.QuarticPolynomialWorks (0 ms)
+[ RUN      ] PolynomialSolver.QuarticPolynomialWithTwoClustersOfCloseRootsWorks
+[       OK ] PolynomialSolver.QuarticPolynomialWithTwoClustersOfCloseRootsWorks (0 ms)
+[ RUN      ] PolynomialSolver.QuarticPolynomialWithTwoZeroRootsWorks
+[       OK ] PolynomialSolver.QuarticPolynomialWithTwoZeroRootsWorks (0 ms)
+[ RUN      ] PolynomialSolver.QuarticMonomialWorks
+[       OK ] PolynomialSolver.QuarticMonomialWorks (0 ms)
+[ RUN      ] PolynomialSolver.NullPointerAsImaginaryPartWorks
+[       OK ] PolynomialSolver.NullPointerAsImaginaryPartWorks (0 ms)
+[ RUN      ] PolynomialSolver.NullPointerAsRealPartWorks
+[       OK ] PolynomialSolver.NullPointerAsRealPartWorks (0 ms)
+[ RUN      ] PolynomialSolver.BothOutputArgumentsNullWorks
+[       OK ] PolynomialSolver.BothOutputArgumentsNullWorks (0 ms)
+[----------] 16 tests from PolynomialSolver (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 16 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"polynomial_solver_test" end time: Sep 04 10:37 EDT
+"polynomial_solver_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/45 Testing: problem_test
+29/45 Test: problem_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/problem_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"problem_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 11 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 11 tests from Problem
+[ RUN      ] Problem.AddResidualWithNullCostFunctionDies
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] Problem.AddResidualWithNullCostFunctionDies (5 ms)
+[ RUN      ] Problem.AddResidualWithIncorrectNumberOfParameterBlocksDies
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] Problem.AddResidualWithIncorrectNumberOfParameterBlocksDies (5 ms)
+[ RUN      ] Problem.AddResidualWithDifferentSizesOnTheSameVariableDies
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] Problem.AddResidualWithDifferentSizesOnTheSameVariableDies (4 ms)
+[ RUN      ] Problem.AddResidualWithDuplicateParametersDies
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] Problem.AddResidualWithDuplicateParametersDies (8 ms)
+[ RUN      ] Problem.AddResidualWithIncorrectSizesOfParameterBlockDies
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] Problem.AddResidualWithIncorrectSizesOfParameterBlockDies (4 ms)
+[ RUN      ] Problem.AddResidualAddsDuplicatedParametersOnlyOnce
+[       OK ] Problem.AddResidualAddsDuplicatedParametersOnlyOnce (0 ms)
+[ RUN      ] Problem.AddParameterWithDifferentSizesOnTheSameVariableDies
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] Problem.AddParameterWithDifferentSizesOnTheSameVariableDies (4 ms)
+[ RUN      ] Problem.AddParameterWithAliasedParametersDies
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] Problem.AddParameterWithAliasedParametersDies (24 ms)
+[ RUN      ] Problem.AddParameterIgnoresDuplicateCalls
+[       OK ] Problem.AddParameterIgnoresDuplicateCalls (0 ms)
+[ RUN      ] Problem.AddingParametersAndResidualsResultsInExpectedProblem
+[       OK ] Problem.AddingParametersAndResidualsResultsInExpectedProblem (0 ms)
+[ RUN      ] Problem.ReusedCostFunctionsAreOnlyDeletedOnce
+[       OK ] Problem.ReusedCostFunctionsAreOnlyDeletedOnce (0 ms)
+[----------] 11 tests from Problem (54 ms total)
+
+[----------] Global test environment tear-down
+[==========] 11 tests from 1 test case ran. (54 ms total)
+[  PASSED  ] 11 tests.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"problem_test" end time: Sep 04 10:37 EDT
+"problem_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/45 Testing: residual_block_test
+30/45 Test: residual_block_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/residual_block_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"residual_block_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from ResidualBlock
+[ RUN      ] ResidualBlock.EvaluteWithNoLossFunctionOrLocalParameterizations
+[       OK ] ResidualBlock.EvaluteWithNoLossFunctionOrLocalParameterizations (0 ms)
+[ RUN      ] ResidualBlock.EvaluteWithLocalParameterizations
+[       OK ] ResidualBlock.EvaluteWithLocalParameterizations (0 ms)
+[----------] 2 tests from ResidualBlock (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"residual_block_test" end time: Sep 04 10:37 EDT
+"residual_block_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/45 Testing: residual_block_utils_test
+31/45 Test: residual_block_utils_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/residual_block_utils_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"residual_block_utils_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from ResidualBlockUtils
+[ RUN      ] ResidualBlockUtils.CheckAllCombinationsOfBadness
+[       OK ] ResidualBlockUtils.CheckAllCombinationsOfBadness (1 ms)
+[----------] 1 test from ResidualBlockUtils (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"residual_block_utils_test" end time: Sep 04 10:37 EDT
+"residual_block_utils_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/45 Testing: rotation_test
+32/45 Test: rotation_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/rotation_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"rotation_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 33 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 26 tests from Rotation
+[ RUN      ] Rotation.ZeroAngleAxisToQuaternion
+[       OK ] Rotation.ZeroAngleAxisToQuaternion (0 ms)
+[ RUN      ] Rotation.SmallAngleAxisToQuaternion
+[       OK ] Rotation.SmallAngleAxisToQuaternion (0 ms)
+[ RUN      ] Rotation.TinyAngleAxisToQuaternion
+[       OK ] Rotation.TinyAngleAxisToQuaternion (0 ms)
+[ RUN      ] Rotation.XRotationToQuaternion
+[       OK ] Rotation.XRotationToQuaternion (0 ms)
+[ RUN      ] Rotation.UnitQuaternionToAngleAxis
+[       OK ] Rotation.UnitQuaternionToAngleAxis (0 ms)
+[ RUN      ] Rotation.YRotationQuaternionToAngleAxis
+[       OK ] Rotation.YRotationQuaternionToAngleAxis (0 ms)
+[ RUN      ] Rotation.ZRotationQuaternionToAngleAxis
+[       OK ] Rotation.ZRotationQuaternionToAngleAxis (0 ms)
+[ RUN      ] Rotation.SmallQuaternionToAngleAxis
+[       OK ] Rotation.SmallQuaternionToAngleAxis (0 ms)
+[ RUN      ] Rotation.TinyQuaternionToAngleAxis
+[       OK ] Rotation.TinyQuaternionToAngleAxis (0 ms)
+[ RUN      ] Rotation.QuaternionToAngleAxisAngleIsLessThanPi
+[       OK ] Rotation.QuaternionToAngleAxisAngleIsLessThanPi (0 ms)
+[ RUN      ] Rotation.AngleAxisToQuaterionAndBack
+[       OK ] Rotation.AngleAxisToQuaterionAndBack (82 ms)
+[ RUN      ] Rotation.QuaterionToAngleAxisAndBack
+[       OK ] Rotation.QuaterionToAngleAxisAndBack (86 ms)
+[ RUN      ] Rotation.ZeroAngleAxisToRotationMatrix
+[       OK ] Rotation.ZeroAngleAxisToRotationMatrix (0 ms)
+[ RUN      ] Rotation.NearZeroAngleAxisToRotationMatrix
+[       OK ] Rotation.NearZeroAngleAxisToRotationMatrix (0 ms)
+[ RUN      ] Rotation.XRotationToRotationMatrix
+[       OK ] Rotation.XRotationToRotationMatrix (0 ms)
+[ RUN      ] Rotation.YRotationToRotationMatrix
+[       OK ] Rotation.YRotationToRotationMatrix (0 ms)
+[ RUN      ] Rotation.NearPiAngleAxisRoundTrip
+[       OK ] Rotation.NearPiAngleAxisRoundTrip (2 ms)
+[ RUN      ] Rotation.AtPiAngleAxisRoundTrip
+[       OK ] Rotation.AtPiAngleAxisRoundTrip (1 ms)
+[ RUN      ] Rotation.ZRotationToRotationMatrix
+[       OK ] Rotation.ZRotationToRotationMatrix (0 ms)
+[ RUN      ] Rotation.AngleAxisToRotationMatrixAndBack
+[       OK ] Rotation.AngleAxisToRotationMatrixAndBack (70 ms)
+[ RUN      ] Rotation.SmallAngleAxisToQuaternionForJets
+[       OK ] Rotation.SmallAngleAxisToQuaternionForJets (0 ms)
+[ RUN      ] Rotation.TinyAngleAxisToQuaternionForJets
+[       OK ] Rotation.TinyAngleAxisToQuaternionForJets (0 ms)
+[ RUN      ] Rotation.ZeroAngleAxisToQuaternionForJets
+[       OK ] Rotation.ZeroAngleAxisToQuaternionForJets (0 ms)
+[ RUN      ] Rotation.SmallQuaternionToAngleAxisForJets
+[       OK ] Rotation.SmallQuaternionToAngleAxisForJets (0 ms)
+[ RUN      ] Rotation.TinyQuaternionToAngleAxisForJets
+[       OK ] Rotation.TinyQuaternionToAngleAxisForJets (1 ms)
+[ RUN      ] Rotation.ZeroQuaternionToAngleAxisForJets
+[       OK ] Rotation.ZeroQuaternionToAngleAxisForJets (0 ms)
+[----------] 26 tests from Rotation (244 ms total)
+
+[----------] 2 tests from EulerAnglesToRotationMatrix
+[ RUN      ] EulerAnglesToRotationMatrix.OnAxis
+[       OK ] EulerAnglesToRotationMatrix.OnAxis (0 ms)
+[ RUN      ] EulerAnglesToRotationMatrix.IsOrthonormal
+[       OK ] EulerAnglesToRotationMatrix.IsOrthonormal (67 ms)
+[----------] 2 tests from EulerAnglesToRotationMatrix (67 ms total)
+
+[----------] 3 tests from Quaternion
+[ RUN      ] Quaternion.RotatePointGivesSameAnswerAsRotationByMatrixCanned
+[       OK ] Quaternion.RotatePointGivesSameAnswerAsRotationByMatrixCanned (0 ms)
+[ RUN      ] Quaternion.RotatePointGivesSameAnswerAsRotationByMatrix
+[       OK ] Quaternion.RotatePointGivesSameAnswerAsRotationByMatrix (0 ms)
+[ RUN      ] Quaternion.MultiplicationIsAssociative
+[       OK ] Quaternion.MultiplicationIsAssociative (0 ms)
+[----------] 3 tests from Quaternion (0 ms total)
+
+[----------] 2 tests from AngleAxis
+[ RUN      ] AngleAxis.RotatePointGivesSameAnswerAsRotationMatrix
+[       OK ] AngleAxis.RotatePointGivesSameAnswerAsRotationMatrix (153 ms)
+[ RUN      ] AngleAxis.NearZeroRotatePointGivesSameAnswerAsRotationMatrix
+[       OK ] AngleAxis.NearZeroRotatePointGivesSameAnswerAsRotationMatrix (3 ms)
+[----------] 2 tests from AngleAxis (156 ms total)
+
+[----------] Global test environment tear-down
+[==========] 33 tests from 4 test cases ran. (467 ms total)
+[  PASSED  ] 33 tests.
+<end of output>
+Test time =   0.47 sec
+----------------------------------------------------------
+Test Passed.
+"rotation_test" end time: Sep 04 10:37 EDT
+"rotation_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/45 Testing: runtime_numeric_diff_cost_function_test
+33/45 Test: runtime_numeric_diff_cost_function_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/runtime_numeric_diff_cost_function_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"runtime_numeric_diff_cost_function_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from NumericDiffCostFunction
+[ RUN      ] NumericDiffCostFunction.EasyCase
+[       OK ] NumericDiffCostFunction.EasyCase (1 ms)
+[ RUN      ] NumericDiffCostFunction.TransendentalOperationsInCostFunction
+[       OK ] NumericDiffCostFunction.TransendentalOperationsInCostFunction (0 ms)
+[----------] 2 tests from NumericDiffCostFunction (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"runtime_numeric_diff_cost_function_test" end time: Sep 04 10:37 EDT
+"runtime_numeric_diff_cost_function_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/45 Testing: schur_complement_solver_test
+34/45 Test: schur_complement_solver_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/schur_complement_solver_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"schur_complement_solver_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from SchurComplementSolverTest
+[ RUN      ] SchurComplementSolverTest.SparseSchurWithSuiteSparse
+[       OK ] SchurComplementSolverTest.SparseSchurWithSuiteSparse (0 ms)
+[ RUN      ] SchurComplementSolverTest.SparseSchurWithCXSparse
+[       OK ] SchurComplementSolverTest.SparseSchurWithCXSparse (1 ms)
+[ RUN      ] SchurComplementSolverTest.DenseSchur
+[       OK ] SchurComplementSolverTest.DenseSchur (0 ms)
+[----------] 3 tests from SchurComplementSolverTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"schur_complement_solver_test" end time: Sep 04 10:37 EDT
+"schur_complement_solver_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/45 Testing: schur_eliminator_test
+35/45 Test: schur_eliminator_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/schur_eliminator_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"schur_eliminator_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from SchurEliminatorTest
+[ RUN      ] SchurEliminatorTest.ScalarProblem
+[       OK ] SchurEliminatorTest.ScalarProblem (0 ms)
+[ RUN      ] SchurEliminatorTest.BlockProblem
+[       OK ] SchurEliminatorTest.BlockProblem (18347 ms)
+[----------] 2 tests from SchurEliminatorTest (18347 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (18347 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =  18.35 sec
+----------------------------------------------------------
+Test Passed.
+"schur_eliminator_test" end time: Sep 04 10:37 EDT
+"schur_eliminator_test" time elapsed: 00:00:18
+----------------------------------------------------------
+
+36/45 Testing: schur_ordering_test
+36/45 Test: schur_ordering_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/schur_ordering_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"schur_ordering_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from SchurOrderingTest
+[ RUN      ] SchurOrderingTest.NoFixed
+[       OK ] SchurOrderingTest.NoFixed (0 ms)
+[ RUN      ] SchurOrderingTest.AllFixed
+[       OK ] SchurOrderingTest.AllFixed (1 ms)
+[ RUN      ] SchurOrderingTest.OneFixed
+[       OK ] SchurOrderingTest.OneFixed (0 ms)
+[----------] 3 tests from SchurOrderingTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"schur_ordering_test" end time: Sep 04 10:37 EDT
+"schur_ordering_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/45 Testing: solver_impl_test
+37/45 Test: solver_impl_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/solver_impl_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"solver_impl_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 23 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 23 tests from SolverImpl
+[ RUN      ] SolverImpl.RemoveFixedBlocksNothingConstant
+[       OK ] SolverImpl.RemoveFixedBlocksNothingConstant (0 ms)
+[ RUN      ] SolverImpl.RemoveFixedBlocksAllParameterBlocksConstant
+[       OK ] SolverImpl.RemoveFixedBlocksAllParameterBlocksConstant (0 ms)
+[ RUN      ] SolverImpl.RemoveFixedBlocksNoResidualBlocks
+[       OK ] SolverImpl.RemoveFixedBlocksNoResidualBlocks (0 ms)
+[ RUN      ] SolverImpl.RemoveFixedBlocksOneParameterBlockConstant
+[       OK ] SolverImpl.RemoveFixedBlocksOneParameterBlockConstant (0 ms)
+[ RUN      ] SolverImpl.RemoveFixedBlocksNumEliminateBlocks
+[       OK ] SolverImpl.RemoveFixedBlocksNumEliminateBlocks (0 ms)
+[ RUN      ] SolverImpl.RemoveFixedBlocksFixedCost
+[       OK ] SolverImpl.RemoveFixedBlocksFixedCost (0 ms)
+[ RUN      ] SolverImpl.ReorderResidualBlockNonSchurSolver
+[       OK ] SolverImpl.ReorderResidualBlockNonSchurSolver (0 ms)
+[ RUN      ] SolverImpl.ReorderResidualBlockNumEliminateBlockDeathTest
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] SolverImpl.ReorderResidualBlockNumEliminateBlockDeathTest (5 ms)
+[ RUN      ] SolverImpl.ReorderResidualBlockNormalFunction
+[       OK ] SolverImpl.ReorderResidualBlockNormalFunction (0 ms)
+[ RUN      ] SolverImpl.ReorderResidualBlockNormalFunctionWithFixedBlocks
+[       OK ] SolverImpl.ReorderResidualBlockNormalFunctionWithFixedBlocks (0 ms)
+[ RUN      ] SolverImpl.ApplyUserOrderingOrderingTooSmall
+[       OK ] SolverImpl.ApplyUserOrderingOrderingTooSmall (0 ms)
+[ RUN      ] SolverImpl.ApplyUserOrderingHasDuplicates
+[       OK ] SolverImpl.ApplyUserOrderingHasDuplicates (0 ms)
+[ RUN      ] SolverImpl.ApplyUserOrderingNormal
+[       OK ] SolverImpl.ApplyUserOrderingNormal (0 ms)
+[ RUN      ] SolverImpl.CreateLinearSolverNegativeMaxNumIterations
+[       OK ] SolverImpl.CreateLinearSolverNegativeMaxNumIterations (0 ms)
+[ RUN      ] SolverImpl.CreateLinearSolverNegativeMinNumIterations
+[       OK ] SolverImpl.CreateLinearSolverNegativeMinNumIterations (0 ms)
+[ RUN      ] SolverImpl.CreateLinearSolverMaxLessThanMinIterations
+[       OK ] SolverImpl.CreateLinearSolverMaxLessThanMinIterations (0 ms)
+[ RUN      ] SolverImpl.CreateLinearSolverZeroNumEliminateBlocks
+[       OK ] SolverImpl.CreateLinearSolverZeroNumEliminateBlocks (0 ms)
+[ RUN      ] SolverImpl.CreateLinearSolverDenseSchurMultipleThreads
+[       OK ] SolverImpl.CreateLinearSolverDenseSchurMultipleThreads (0 ms)
+[ RUN      ] SolverImpl.CreateIterativeLinearSolverForDogleg
+[       OK ] SolverImpl.CreateIterativeLinearSolverForDogleg (0 ms)
+[ RUN      ] SolverImpl.CreateLinearSolverNormalOperation
+[       OK ] SolverImpl.CreateLinearSolverNormalOperation (0 ms)
+[ RUN      ] SolverImpl.UpdateStateEveryIterationOption
+[       OK ] SolverImpl.UpdateStateEveryIterationOption (1 ms)
+[ RUN      ] SolverImpl.ConstantParameterBlocksDoNotChangeAndStateInvariantKept
+[       OK ] SolverImpl.ConstantParameterBlocksDoNotChangeAndStateInvariantKept (0 ms)
+[ RUN      ] SolverImpl.InitialAndFinalResidualsGradientAndJacobian
+[       OK ] SolverImpl.InitialAndFinalResidualsGradientAndJacobian (0 ms)
+[----------] 23 tests from SolverImpl (6 ms total)
+
+[----------] Global test environment tear-down
+[==========] 23 tests from 1 test case ran. (7 ms total)
+[  PASSED  ] 23 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"solver_impl_test" end time: Sep 04 10:37 EDT
+"solver_impl_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/45 Testing: suitesparse_test
+38/45 Test: suitesparse_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/suitesparse_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"suitesparse_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from SuiteSparse
+[ RUN      ] SuiteSparse.BlockPermutationToScalarPermutation
+[       OK ] SuiteSparse.BlockPermutationToScalarPermutation (0 ms)
+[ RUN      ] SuiteSparse.ScalarMatrixToBlockMatrix
+[       OK ] SuiteSparse.ScalarMatrixToBlockMatrix (0 ms)
+[----------] 2 tests from SuiteSparse (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"suitesparse_test" end time: Sep 04 10:37 EDT
+"suitesparse_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/45 Testing: symmetric_linear_solver_test
+39/45 Test: symmetric_linear_solver_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/symmetric_linear_solver_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"symmetric_linear_solver_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 2 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from ConjugateGradientTest
+[ RUN      ] ConjugateGradientTest.Solves3x3IdentitySystem
+[       OK ] ConjugateGradientTest.Solves3x3IdentitySystem (1 ms)
+[----------] 1 test from ConjugateGradientTest (1 ms total)
+
+[----------] 1 test from ConjuateGradientTest
+[ RUN      ] ConjuateGradientTest.Solves3x3SymmetricSystem
+[       OK ] ConjuateGradientTest.Solves3x3SymmetricSystem (0 ms)
+[----------] 1 test from ConjuateGradientTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 2 test cases ran. (1 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"symmetric_linear_solver_test" end time: Sep 04 10:37 EDT
+"symmetric_linear_solver_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/45 Testing: triplet_sparse_matrix_test
+40/45 Test: triplet_sparse_matrix_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/triplet_sparse_matrix_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"triplet_sparse_matrix_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 9 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 9 tests from TripletSparseMatrix
+[ RUN      ] TripletSparseMatrix.DefaultConstructorReturnsEmptyObject
+[       OK ] TripletSparseMatrix.DefaultConstructorReturnsEmptyObject (0 ms)
+[ RUN      ] TripletSparseMatrix.SimpleConstructorAndBasicOperations
+
+[WARNING] /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/internal/ceres/gmock_gtest_all.cc:6986:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] TripletSparseMatrix.SimpleConstructorAndBasicOperations (5 ms)
+[ RUN      ] TripletSparseMatrix.CopyConstructor
+[       OK ] TripletSparseMatrix.CopyConstructor (0 ms)
+[ RUN      ] TripletSparseMatrix.AssignmentOperator
+[       OK ] TripletSparseMatrix.AssignmentOperator (0 ms)
+[ RUN      ] TripletSparseMatrix.AppendRows
+[       OK ] TripletSparseMatrix.AppendRows (0 ms)
+[ RUN      ] TripletSparseMatrix.AppendCols
+[       OK ] TripletSparseMatrix.AppendCols (0 ms)
+[ RUN      ] TripletSparseMatrix.CreateDiagonalMatrix
+[       OK ] TripletSparseMatrix.CreateDiagonalMatrix (0 ms)
+[ RUN      ] TripletSparseMatrix.Resize
+[       OK ] TripletSparseMatrix.Resize (0 ms)
+[ RUN      ] TripletSparseMatrix.Serialization
+[       OK ] TripletSparseMatrix.Serialization (0 ms)
+[----------] 9 tests from TripletSparseMatrix (5 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test case ran. (5 ms total)
+[  PASSED  ] 9 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"triplet_sparse_matrix_test" end time: Sep 04 10:37 EDT
+"triplet_sparse_matrix_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/45 Testing: trust_region_minimizer_test
+41/45 Test: trust_region_minimizer_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/trust_region_minimizer_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"trust_region_minimizer_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from TrustRegionMinimizer
+[ RUN      ] TrustRegionMinimizer.PowellsSingularFunctionUsingLevenbergMarquardt
+[       OK ] TrustRegionMinimizer.PowellsSingularFunctionUsingLevenbergMarquardt (1 ms)
+[ RUN      ] TrustRegionMinimizer.PowellsSingularFunctionUsingDogleg
+[       OK ] TrustRegionMinimizer.PowellsSingularFunctionUsingDogleg (1 ms)
+[----------] 2 tests from TrustRegionMinimizer (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (2 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"trust_region_minimizer_test" end time: Sep 04 10:37 EDT
+"trust_region_minimizer_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+42/45 Testing: unsymmetric_linear_solver_test
+42/45 Test: unsymmetric_linear_solver_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/unsymmetric_linear_solver_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"unsymmetric_linear_solver_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 4 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 4 tests from UnsymmetricLinearSolverTest
+[ RUN      ] UnsymmetricLinearSolverTest.DenseQR
+[       OK ] UnsymmetricLinearSolverTest.DenseQR (0 ms)
+[ RUN      ] UnsymmetricLinearSolverTest.DenseNormalCholesky
+[       OK ] UnsymmetricLinearSolverTest.DenseNormalCholesky (0 ms)
+[ RUN      ] UnsymmetricLinearSolverTest.SparseNormalCholeskyUsingSuiteSparse
+[       OK ] UnsymmetricLinearSolverTest.SparseNormalCholeskyUsingSuiteSparse (0 ms)
+[ RUN      ] UnsymmetricLinearSolverTest.SparseNormalCholeskyUsingCXSparse
+[       OK ] UnsymmetricLinearSolverTest.SparseNormalCholeskyUsingCXSparse (0 ms)
+[----------] 4 tests from UnsymmetricLinearSolverTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"unsymmetric_linear_solver_test" end time: Sep 04 10:37 EDT
+"unsymmetric_linear_solver_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+43/45 Testing: visibility_test
+43/45 Test: visibility_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/visibility_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"visibility_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from VisibilityTest
+[ RUN      ] VisibilityTest.SimpleMatrix
+[       OK ] VisibilityTest.SimpleMatrix (0 ms)
+[ RUN      ] VisibilityTest.NoEBlocks
+[       OK ] VisibilityTest.NoEBlocks (0 ms)
+[----------] 2 tests from VisibilityTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"visibility_test" end time: Sep 04 10:37 EDT
+"visibility_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+44/45 Testing: visibility_based_preconditioner_test
+44/45 Test: visibility_based_preconditioner_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/visibility_based_preconditioner_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"visibility_based_preconditioner_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 4 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 4 tests from VisibilityBasedPreconditionerTest
+[ RUN      ] VisibilityBasedPreconditionerTest.SchurJacobiStructure
+[       OK ] VisibilityBasedPreconditionerTest.SchurJacobiStructure (27 ms)
+[ RUN      ] VisibilityBasedPreconditionerTest.OneClusterClusterJacobi
+[       OK ] VisibilityBasedPreconditionerTest.OneClusterClusterJacobi (43 ms)
+[ RUN      ] VisibilityBasedPreconditionerTest.ClusterJacobi
+[       OK ] VisibilityBasedPreconditionerTest.ClusterJacobi (38 ms)
+[ RUN      ] VisibilityBasedPreconditionerTest.ClusterTridiagonal
+[       OK ] VisibilityBasedPreconditionerTest.ClusterTridiagonal (41 ms)
+[----------] 4 tests from VisibilityBasedPreconditionerTest (149 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test case ran. (149 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"visibility_based_preconditioner_test" end time: Sep 04 10:37 EDT
+"visibility_based_preconditioner_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+45/45 Testing: system_test
+45/45 Test: system_test
+Command: "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/bin/system_test" "--test_srcdir" "/csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-solver-1.3.0/data"
+Directory: /csail/vision-torralba6/people/jxiao/SUNgeon_detector/SUNdetector/optimization/ceres-bin-1.3.0/internal/ceres
+"system_test" start time: Sep 04 10:37 EDT
+Output:
+----------------------------------------------------------
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from SystemTest
+[ RUN      ] SystemTest.PowellsFunction
+[       OK ] SystemTest.PowellsFunction (2 ms)
+[ RUN      ] SystemTest.BundleAdjustmentProblem
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+CHOLMOD warning: matrix not positive definite
+[       OK ] SystemTest.BundleAdjustmentProblem (176374 ms)
+[----------] 2 tests from SystemTest (176376 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (176376 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time = 176.43 sec
+----------------------------------------------------------
+Test Passed.
+"system_test" end time: Sep 04 10:40 EDT
+"system_test" time elapsed: 00:02:56
+----------------------------------------------------------
+
+End testing: Sep 04 10:40 EDT

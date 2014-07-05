@@ -1,0 +1,18 @@
+function R = lookat2rotation(v)
+
+if v(1) == 0
+    if v(3) > 0 
+        ANGyaw = pi/2;
+    else
+        ANGyaw = - pi/2;
+    end
+else
+    ANGyaw = atan(v(3) / v(1));
+    if v(1) < 0
+        ANGyaw = ANGyaw + pi;
+    end
+end
+
+ANGyaw = ANGyaw - pi/2;
+ANGpitch = asin(v(2));
+

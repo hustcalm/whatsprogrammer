@@ -1,0 +1,40 @@
+function descriptor = ZNCCpatch(image, point, HalfSizeWindow)
+
+SizeWindow= 1+2*HalfSizeWindow;
+
+SW1 = HalfSizeWindow;
+
+SW2= HalfSizeWindow+1;
+
+Mean = 0;
+Deviation = 0;
+
+
+for i=1:size(point,1)
+    [x y] = point(i,:);
+    patch = image(x-HalfSizeWindow : x+HalfSizeWindow,y-HalfSizeWindow : y+HalfSizeWindow);
+    Mean  = mean(mean(patch));
+    Deviation =  sqrt( sum(sum(patch .^ 2)) - );
+    patch = (patch .- Mean) ./Deviation;
+end
+
+
+
+SInt16 SW1= (Abs(SizeWindow)>>1), SW2= Abs(SizeWindow)-SW1,
+	S=   Abs(SizeWindow),      SS=  Abs(SizeWindow*SizeWindow);
+
+		for (SInt16 yy= y_-SW1; yy< y_+SW2; yy++) {
+			const Float4 *PteIn= &Float_(x_-SW1,yy);
+			for (SInt16 xx= 0; xx< SizeWindow; xx++) {
+				Float4 L= PteIn[xx];
+				PteOut[xx]= L;
+				Mean+= L;
+				Deviation+= L*L;
+			};
+			PteOut+= SizeWindow; 
+		};
+		Mean/= SS;
+		Deviation= sqrt(Deviation-SS*Mean*Mean);
+		PteOut= NormalizedLuminanceTable;
+		for (SInt16 zz= 0; zz< SS; zz++)
+			PteOut[zz]= (PteOut[zz]-Mean)/Deviation;

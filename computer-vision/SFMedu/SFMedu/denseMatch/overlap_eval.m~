@@ -1,0 +1,29 @@
+function h = overlap_eval(rank_a, rank_b)
+
+if length(rank_a) ~= length(rank_b)
+    return
+end
+
+elem_cnt = length(rank_a);
+
+
+[sorted_a idx_a] = sort(rank_a,'descend');
+[sorted_b idx_b] = sort(rank_b,'descend');
+
+
+overlap_score = zeros([elem_cnt 1]);
+chance_score  = zeros([elem_cnt 1]);
+
+for k=1:elem_cnt
+    overlap_score(k)= length(intersect(idx_a(1:k),idx_b(1:k))) / k;
+    
+    chance_score(k) = 0;
+    for j=1:k
+        chance_score(k) = chance_score(k) + nchoosek(k,j) * nchoosek(elem_cnt-k,k-j) / nchoosek(elem_cnt,k);
+    end
+    
+     
+end
+
+h = plot((1:elem_cnt)/elem_cnt, overlap_score,(1:elem_cnt)/elem_cnt,chance_score,'-r');
+axis([0 1 0 1]);

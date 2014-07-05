@@ -1,0 +1,93 @@
+clear;
+clc;
+
+disp('CSSA Freeride auto register running...');
+
+url = 'http://cssa.mit.edu/freeride/source/index.php';
+
+regUrl = 'http://cssa.mit.edu/freeride/source/register_slot.php?Email=jxiao@mit.edu&Password=fjfj999&Slots=%s';
+
+preferTime = 15;
+
+
+previousSlot = '';
+
+while true
+    txt = urlread(url);
+    null_str = '<option selected value="0">Choose one available slot</option>';
+    pos = strfind(txt, null_str);
+    if ~isempty(pos)
+        pos = pos + length(null_str);
+        txt = txt(pos:end);
+        pos = strfind(txt, '</select>');
+        txt = txt(1:pos-1);
+        
+        % parse the result
+        field = regexp(txt,'</option>','split');
+        
+        cnt = 0;
+        clear slotID;
+        clear date;
+        clear day;
+        clear time;
+        clear seatLeft;
+        
+        for i=1:length(field)
+            strLine = field{i};
+            
+            areas = strread(strLine,'%s','delimiter',' ''>()');
+            
+            if ~isempty(areas)
+                cnt = cnt + 1;
+                
+                slotID(cnt) = areas{3};
+                date  {cnt} = areas{5};
+                day   {cnt} = areas{6};
+                t = regexp(areas{7},':','split');
+                t = str2num(t{1}) + str2num(t{2})/60;
+                
+                if strcmp(areas{8},'PM')
+                    t = t + 12;
+                end
+                time   {cnt} = t;
+                seatLeft{cnt} = str2num(areas{9});
+            end
+        end
+        
+        if strcmp(previousSlot, '')
+            previousSlot = slotID{1};
+            fprintf('previousSlot = %s'
+            pause(60); % pause for 60 seconds
+        else
+            if strcmp(previousSlot, slotID{1})
+                fprintf('nothing new\n');
+                pause(60); % pause for 60 seconds
+            else
+                % NEW STUFF
+                
+                % choose time
+                clear diff;
+                for i=1:length(slotID)
+                    
+                    if (seatLeft{i} == 0)
+                        diff(i) = 8; % panalize 8 hours for adding into waiting list
+                    else
+                        diff(i) = abs(time{i}-preferTime);
+                    end
+                end
+                
+                [~, idx] = min(diff);
+                
+                %urlresult = urlread(sprintf(regUrl,slotID{idx}));
+                
+                sendmail('jianxiong.xiao@gmail.com','CSSA Freeride Auto Reg Success',sprintf(regUrl,slotID{idx}));
+                
+                % exit
+                
+                fprintf('reg success. slotID = %s\n',slotID{idx});
+                                
+                break;
+            end
+        end
+    end    
+end

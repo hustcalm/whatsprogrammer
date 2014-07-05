@@ -1,0 +1,26 @@
+function foc = SixPtFocal(Matches)
+syms F f x y z w equ Res Q C
+Q = [1, 0 ,0 ; 0 ,1 ,0; 0, 0, w];
+q = [ Matches(:,1), Matches(:,2)] ;
+qp = [ Matches(:,3), Matches(:,4)] ;
+M = [qp(:,1).*q(:,1), qp(:,1).*q(:,2), qp(:,1), ...
+    qp(:,2).*q(:,1), qp(:,2).*q(:,2), qp(:,2), ...
+    q(:,1), q(:,2), ones(6,1)] ;
+N = null(M) %%% compute the null-space
+f = x*N(:,1) + y*N(:,2) + z*N(:,3); %% form the FM
+F = transpose(reshape(f,3,3));
+FT =transpose(F);
+equ(1) = det(F);
+equ(2:10) = expand(2*F*Q*FT*Q*F-trace(F*Q*FT*Q)*F);
+for i =1:10
+    %Note:Be careful with MATLAB delimiter for string, ?or'?
+    equ(i) = maple('collect',equ(i),'[x,y,z]','distributed');
+    for j =1:10
+        oper = maple('op', j, equ(i)) ;
+        C(i,j) = maple('op',1,oper);
+    end
+end
+disp('Compute Det(C),need a while,please wait,,,');
+    Res = maple('evalf', det(C))%%Hidden-variable resultant
+    foc = 1.0./sqrt(double([solve( Res)]))
+    disp('Ground-truth focal-length = 600.0000');

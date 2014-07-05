@@ -1,0 +1,166 @@
+%!TEX root = ceres-solver.tex
+
+\chapter{Version History}
+\section*{1.3.0}
+\subsection{New Features}
+\begin{itemize}
+\item Android Port (Scott Ettinger also contributed to the port)
+\item Windows port. (Changchang Wu and Pierre Moulon also contributed to the port)
+\item New subspace Dogleg Solver. (Markus Moll)
+\item Trust region algorithm now supports the option of non-monotonic steps.
+\item New loss functions \texttt{ArcTanLossFunction,
+    TolerantLossFunction} and \texttt{ComposedLossFunction}. (James Roseborough).
+\item New \texttt{DENSE\_NORMAL\_CHOLESKY} linear solver, which uses Eigen's
+  LDLT factorization on the normal equations.
+\item Cached symbolic factorization when using \texttt{CXSparse}.
+  (Petter Strandark)
+\item New example \texttt{nist.cc} and data from the NIST non-linear
+  regression test suite. (Thanks to Douglas Bates for suggesting this.)
+\item The traditional Dogleg solver now uses an elliptical trust
+  region (Markus Moll)
+\item Support for returning initial and final gradients \& Jacobians.
+\item Gradient computation support in the evaluators, with an eye
+  towards developing first order/gradient based solvers.
+\item A better way to compute \texttt{Solver::Summary::fixed\_cost}. (Markus Moll)
+\item \texttt{CMake} support for building documentation, separate examples,
+  installing and uninstalling the library and Gerrit hooks (Arnaud
+  Gelas)
+\item \texttt{SuiteSparse4} support (Markus Moll)
+\item Support for building Ceres without \texttt{TR1} (This leads to
+  slightly slower \texttt{DENSE\_SCHUR} and \texttt{SPARSE\_SCHUR} solvers).
+\item \texttt{BALProblem} can now write a problem back to disk.
+\item \texttt{bundle\_adjuster} now allows the user to normalize and perturb the
+  problem before solving.
+\item Solver progress logging to file.
+\item Added \texttt{Program::ToString} and
+  \texttt{ParameterBlock::ToString}  to help with debugging.
+\item Ability to build Ceres as a shared library (MacOS and Linux only), associated versioning and build release script changes.
+\item Portable floating point classification API.
+\end{itemize}
+
+\subsection{Bug Fixes}
+\begin{itemize}
+\item Fix how invalid step evaluations are handled.
+\item Change the slop handling around zero for model cost changes to use
+relative tolerances rather than absolute tolerances.
+\item Fix an inadvertant integer to bool conversion. (Petter Strandmark)
+\item Do not link to \texttt{libgomp} when building on
+  windows. (Petter Strandmark)
+\item Include \texttt{gflags.h} in \texttt{test\_utils.cc}. (Petter
+  Strandmark)
+\item Use standard random number generation routines. (Petter Strandmark)
+\item \texttt{TrustRegionMinimizer} does not implicitly negate the
+  steps that it takes. (Markus Moll)
+\item Diagonal scaling allows for equal upper and lower bounds. (Markus Moll)
+\item TrustRegionStrategy does not misuse LinearSolver:Summary anymore.
+\item Fix Eigen3 Row/Column Major storage issue. (Lena Gieseke)
+\item QuaternionToAngleAxis now guarantees an angle in $[-\pi, \pi]$. (Guoxuan Zhang)
+\item Added a workaround for a compiler bug in the Android NDK to the
+  Schur eliminator.
+\item The sparse linear algebra library is only logged in
+  Summary::FullReport if it is used.
+\item Rename the macro \texttt{CERES\_DONT\_HAVE\_PROTOCOL\_BUFFERS}
+  to \texttt{CERES\_NO\_PROTOCOL\_BUFFERS} for consistency.
+\item Fix how static structure detection for the Schur eliminator logs
+  its results.
+\item Correct example code in the documentation. (Petter Strandmark)
+\item Fix \texttt{fpclassify.h} to work with the Android NDK and STLport.
+\item Fix a memory leak in the \texttt{levenber\_marquardt\_strategy\_test.cc}
+\item Fix an early return bug in the Dogleg solver. (Markus Moll)
+\item Zero initialize Jets.
+\item Moved \texttt{internal/ceres/mock\_log.h} to \texttt{internal/ceres/gmock/mock-log.h}
+\item Unified file path handling in tests.
+\item \texttt{data\_fitting.cc} includes \texttt{gflags}
+\item Renamed Ceres' Mutex class and associated macros to avoid
+  namespace conflicts.
+\item Close the BAL problem file after reading it (Markus Moll)
+\item Fix IsInfinite on Jets.
+\item Drop alignment requirements for Jets.
+\item Fixed Jet to integer comparison. (Keith Leung)
+\item Fix use of uninitialized arrays. (Sebastian Koch \& Markus Moll)
+\item Conditionally compile gflag dependencies.(Casey Goodlett)
+\item Add \texttt{data\_fitting.cc } to the examples \texttt{CMake} file.
+\end{itemize}
+
+\section*{1.2.3}
+\subsection{Bug Fixes}
+\begin{itemize}
+\item \texttt{suitesparse\_test} is enabled even when \texttt{-DSUITESPARSE=OFF}.
+\item \texttt{FixedArray} internal struct did not respect \texttt{Eigen}
+  alignment requirements (Koichi Akabe \& Stephan Kassemeyer).
+\item Fixed \texttt{quadratic.cc} documentation and code mismatch
+  (Nick Lewycky).
+\end{itemize}
+\section*{1.2.2}
+\subsection{Bug Fixes}
+\begin{itemize}
+\item Fix constant parameter blocks, and other minor fixes (Markus Moll)
+\item Fix alignment issues when combining \texttt{Jet} and
+  \texttt{FixedArray} in automatic differeniation.
+\item Remove obsolete \texttt{build\_defs} file.
+\end{itemize}
+\section*{1.2.1}
+\subsection{New Features}
+\begin{itemize}
+\item Powell's Dogleg solver
+\item Documentation now has a brief overview of Trust Region methods and how the Levenberg-Marquardt and Dogleg methods work.
+\end{itemize}
+\subsection{Bug Fixes}
+\begin{itemize}
+\item Destructor for \texttt{TrustRegionStrategy} was not virtual (Markus Moll)
+\item Invalid \texttt{DCHECK} in \texttt{suitesparse.cc} (Markus Moll)
+\item Iteration callbacks were not properly invoked (Luis Alberto Zarrabeiti)
+\item Logging level changes in ConjugateGradientsSolver
+\item VisibilityBasedPreconditioner setup does not account for skipped camera pairs. This was debugging code.
+\item Enable SSE support on MacOS
+\item \texttt{system\_test} was taking too long and too much memory (Koichi Akabe)
+\end{itemize}
+\section*{1.2.0}
+\subsection{New Features}
+\begin{itemize}
+\item \texttt{CXSparse} support.
+\item Block oriented fill reducing orderings. This
+reduces the factorization time for sparse
+\texttt{CHOLMOD} significantly.
+\item New Trust region loop with support for multiple
+trust region step strategies. Currently only Levenberg-Marquardt is supported, but this refactoring opens the door for Dog-leg, Stiehaug and others.
+\item \texttt{CMake} file restructuring.  Builds in \texttt{Release} mode by default, and now has platform specific tuning flags.
+\item Re-organized documentation. No new content, but better organization.
+\end{itemize}
+
+\subsection{Bug Fixes}
+\begin{itemize}
+\item Fixed integer overflow bug in \texttt{block\_random\_access\_sparse\_matrix.cc}.
+\item Renamed some macros to prevent name conflicts.
+\item Fixed incorrent input to \texttt{StateUpdatingCallback}.
+\item Fixes to AutoDiff tests.
+\item Various internal cleanups.
+\end{itemize}
+
+\section*{1.1.1}
+\subsection{Bug Fixes}
+\begin{itemize}
+\item Fix a bug in the handling of constant blocks. (Louis Simard)
+\item Add an optional lower bound to the Levenberg-Marquardt regularizer to prevent oscillating between well and ill posed linear problems.
+\item Some internal refactoring and test fixes.
+\end{itemize}
+\section{1.1.0}
+\subsection{New Features}
+\begin{itemize}
+\item New iterative linear solver for general sparse problems - \texttt{CGNR} and a block Jacobi preconditioner for it.
+\item Changed the semantics of how \texttt{SuiteSparse} dependencies are checked and used. Now \texttt{SuiteSparse} is built by default, only if all of its dependencies are present.
+\item Automatic differentiation now supports dynamic number of residuals.
+\item Support for writing the linear least squares problems to disk in text format so that they can loaded into \texttt{MATLAB}.
+\item Linear solver results are now checked for nan and infinities.
+\item Added \texttt{.gitignore} file.
+\item A better more robust build system.
+\end{itemize}
+
+\subsection{Bug Fixes}
+\begin{itemize}
+\item Fixed a strict weak ordering bug in the schur ordering.
+\item Grammar and typos in the documents and code comments.
+\item Fixed tests which depended on exact equality between floating point values.
+\end{itemize}
+\section*{1.0.0}
+Initial Release.

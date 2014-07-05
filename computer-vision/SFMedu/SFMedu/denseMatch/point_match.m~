@@ -1,0 +1,42 @@
+function point_pair = point_match(size_i,point_i,descriptor_i,size_j,point_j,descriptor_j)
+
+DisparityMax = [0.4, 0.2];
+CostMax = 0.4;
+NbMatchMax 2000;
+
+for i=1:size(point_i,1)
+    for j=1:size(point_j,1)
+        if abs( point_i(i,1) / size_i(1) - point_j(j,1) / size_j(1) ) < DisparityMax(1) ...
+        && abs( point_i(i,2) / size_i(2) - point_j(j,2) / size_j(2) ) < DisparityMax(2)
+            Score = descriptor_i{i} .* descriptor_j{j};
+            if 1-Score<= CostMax
+                
+            end
+            point_pair(end+1,:)=[i,j,];
+        end
+    end
+end
+
+% 						if (Abs(Point0.x()/Image0_->x()+xMedianMove-Point1.x()/Image1_->x())< xDisparityMax 
+% 							&& Abs(Point0.y()/Image0_->y()+yMedianMove- Point1.y()/Image1_->y())< yDisparityMax) 
+% 						{
+% 								Float4 Score= 0, *Pt0= ZNCCTable0+Index0*Surface,
+% 								*Pt1= ZNCCTable1+Index1*Surface;
+% 								for (SInt16 j=0; j< Surface; j++)
+% 									Score+= Pt0[j]*Pt1[j];
+% 								if (1-Score<= CostMax)
+% 								{
+% 									UInt32 NoMatch= Heap.NbElement();
+% 									if (NoMatch== NbMatchMax)
+% 									{
+% 										NoMatch= Heap.ReadMinValuedIndex();
+% 										if (MatchScore[NoMatch]>= Score)
+% 											continue;
+% 										Heap.RemoveMinValuedIndex();
+% 									};
+% 									VertexIndex0[NoMatch]= Index0;
+% 									VertexIndex1[NoMatch]= Index1;
+% 									MatchScore(NoMatch)= Score;
+% 									Heap.AddNewIndex(NoMatch);
+% 								};
+% 						};
