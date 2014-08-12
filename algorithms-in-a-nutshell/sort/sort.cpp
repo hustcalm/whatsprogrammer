@@ -216,8 +216,10 @@ void siftDown(Element* element, int parent, int end) {
         // Stop when the parent is larger than the max child
         if (value.key >= element[maxChild].key) break;
 
+        // Sift parent down and let the maxChild up
         element[parent] = element[maxChild];
         
+        // Go on to the next child
         parent = maxChild;
         maxChild = parent * 2 + 1;
     }
@@ -232,6 +234,7 @@ void heapSort(Element* element, const int N) {
     for (int i = (N / 2); i >= 0; --i) 
         siftDown(element, i, N - 1);
  
+    // Sort the array as a procedure of deleting the root element of the heap
     for (int i = N - 1; i >= 1; --i) {
         SWAP(0, i);
         siftDown(element, 0, i - 1);
