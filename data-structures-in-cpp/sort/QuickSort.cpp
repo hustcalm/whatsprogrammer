@@ -31,6 +31,7 @@ void quickSort(int* a, int l, int r)
                 j--; // 从右向左找第一个小于x的数
             if(i < j)
                 a[i++] = a[j];
+
             while(i < j && a[i] < x)
                 i++; // 从左向右找第一个大于x的数
             if(i < j)
