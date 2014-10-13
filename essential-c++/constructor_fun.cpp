@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include <string>
 
 using namespace std;
@@ -14,5 +15,6 @@ int main()
     string s;
     cout << sizeof(s) << endl;
     MyClass a[5], *b[6];
+    vector<MyClass> f(5);
     return 0;
 }
